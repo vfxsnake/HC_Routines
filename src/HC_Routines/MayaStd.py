@@ -5,6 +5,8 @@ class MayaStd(object):
         maya.standalone.initialize()
         maya.standalone.initialize(name='python')
         
-
+        import pymel.core as pm
+        import maya.mel as mel
+            
 if __name__ == "__main__":
     StartMaya = MayaStd()
