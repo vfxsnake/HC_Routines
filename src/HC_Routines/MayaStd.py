@@ -7,6 +7,10 @@ class MayaStd(object):
         
         import pymel.core as pm
         import maya.mel as mel
-            
+
+    def OpenFile(self):
+        print "Open file"
+        
 if __name__ == "__main__":
     StartMaya = MayaStd()
+    StartMaya.OpenFile()
