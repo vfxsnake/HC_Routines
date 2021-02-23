@@ -1,11 +1,9 @@
-import maya.standalone
-
-import maya.cmds as cmds
-
 class MayaStd(object):
     def __init__(self):
+        
+        import maya.standalone
         maya.standalone.initialize()
-        maya.standalone.initialize( name='python' )
+        maya.standalone.initialize(name='python')
         
 
 if __name__ == "__main__":
